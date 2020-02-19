@@ -1,6 +1,6 @@
 # Spider
 
-程序部分的话 , 我有借鉴的成分->https://github.com/kong36088/BaiduImageSpider
+代码部分的话 , 我有借鉴的成分->https://github.com/kong36088/BaiduImageSpider
 
 毕竟在做这个项目的时候我才自学python三天
 
