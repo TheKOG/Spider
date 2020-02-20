@@ -14,7 +14,7 @@ import _thread
 timeout = 20
 socket.setdefaulttimeout(timeout)
 
-def SaveImage(url='https://bigimg.cheerfun.dev/get/https://i.pximg.net/img-original/img/2019/06/13/11/24/48/75200423_p0.jpg',path='test.jpg'):
+def SaveImage(url='https://original.img.cheerfun.dev/img-original/img/2019/03/05/03/09/55/73518990_p0.png',path='test.png'):
     rq = urllib.request.Request(url)
     rq.add_header('accept','text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9')
     rq.add_header('accept-encoding','gzip, deflate, br')
@@ -56,7 +56,7 @@ class Crawler:
         
         for image_info in rsp_data['imageUrls']:
             try:
-                pps='https://bigimg.cheerfun.dev/get/'+image_info['original']
+                pps=image_info['original'].replace('https://i.pximg.net/','https://original.img.cheerfun.dev/')
                 print(pps)
                 suffix = self.get_suffix(pps)
                 # 保存图片
