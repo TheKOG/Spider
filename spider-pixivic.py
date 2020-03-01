@@ -97,7 +97,7 @@ class Crawler:
                 print("-----socket timout:", url)
             else:
                 rsp_data = json.loads(rsp)
-                tmp=rsp_data['data']['illustrations']
+                tmp=rsp_data['data']
                 for ele in tmp:
                     self.save_image(ele, word)
                 print("下载下一页")
