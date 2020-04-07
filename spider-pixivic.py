@@ -115,5 +115,5 @@ class Crawler:
 
 if __name__ == '__main__':
     word=input('你想要谁的涩图?请输入:')
-    crawler = Crawler(2.6,word)
+    crawler = Crawler(1.3,word)
     crawler.start(word, 10, 1)
